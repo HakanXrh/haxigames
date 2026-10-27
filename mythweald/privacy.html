@@ -42,8 +42,16 @@
 <h3>Hata raporu ve oyun süresi</h3>
 <p>Oyun beklenmedik bir hatayla karşılaşırsa hatanın teknik açıklaması (uygulama sürümü, işletim sistemi sürümü, hata metni) yalnızca cihazında saklanır, en fazla 20 kayıt. Oyun dengesini iyileştirmek için hangi bölgeye ne kadar sürede ulaştığın da yalnızca cihazında tutulur. Bunlar hiçbir yere otomatik gönderilmez; "Raporu kopyala" ile kopyalayıp bize iletmek tamamen senin seçimin. Rapor oyun kaydını içermez.</p>
 
+<!-- Play Games bulut kaydı açılınca: aşağıdaki bölümden "hidden" kaldırılır ve üçüncü taraf paragrafı güncellenir. -->
+<section id="play-games-tr" hidden>
+<h3>Play Games ile bulut kaydı</h3>
+<p>Cihazında Google Play Games'e giriş yaptıysan oyun kaydın, Play Games "kayıtlı oyunlar" özelliğiyle kendi Google hesabına yedeklenir (Google Drive'da, senin göremediğin uygulama alanında). Amaç yedekleme ve aynı Google hesabıyla başka bir cihazda devam edebilmendir. Yedeklenen: oyun kaydının tamamı (karakter adı dahil), kayıt özeti, revizyon numarası, rastgele oluşturulan kurulum kimliği, kaydın zamanı, savaş seviyesi ve altın miktarı.</p>
+<p>Oyun içinde hesap oluşturulmaz. Oyun, Play Games oyuncu kimliğini ve oyuncu adını yalnızca kaydı eşlemek ve sana göstermek için kullanır; e-posta adresin oyuna verilmez. Bu veriler Google tarafından Play Games Hizmetleri kapsamında işlenir ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> geçerlidir. Kayıtlar bizim sunucumuzda tutulmaz ve biz onlara erişemeyiz. Play Games'e giriş yapmazsan hiçbir şey gönderilmez.</p>
+<p>Kayıt, sen silene kadar Google hesabında kalır; Play Games ayarlarından Mythweald verilerini silebilirsin. Bu cihazdaki yerel kayıt bundan etkilenmez.</p>
+</section>
+
 <h3>Uygulamada bulunan üçüncü taraf bileşenler</h3>
-<p>Uygulama paketinde, ileride isteğe bağlı olarak açılacak bulut yedekleme için Google Firebase kitaplıkları bulunur. Bu sürümde oyun Firebase'de oturum açmaz, bulut kaydı okumaz veya yazmaz.</p>
+<p>Uygulama paketinde, ileride isteğe bağlı olarak açılacak özellikler için Google Play Hizmetleri kitaplıkları bulunur (Play Games bulut kaydı ve Google Play faturalandırma). Bu sürümde ikisi de kapalıdır: Play Games'e giriş yapılmaz, bulut kaydı okunmaz veya yazılmaz, satın alma yoktur.</p>
 
 <h3>Android yedeklemesi</h3>
 <p>Cihazında Google yedeklemesi açıksa Android, oyun kaydını da içeren uygulama verilerini Google hesabındaki cihaz yedeğine kopyalayabilir ve uygulamayı yeniden kurduğunda geri yükleyebilir. Bu yedekleme Android ve Google tarafından, senin cihaz ayarlarına göre yapılır; biz bu verilere erişmeyiz. Cihaz ayarlarından kapatabilirsin.</p>
@@ -80,8 +88,15 @@
 <h3>Error report and play time</h3>
 <p>If the game hits an unexpected error, a technical description (app version, OS version, error text) is stored only on your device, at most 20 entries. How long you took to reach each region is also kept only on your device to help balance the game. Nothing is sent automatically; copying the report with "Copy report" and sending it to us is entirely your choice. The report does not include your save.</p>
 
+<section id="play-games-en" hidden>
+<h3>Cloud save with Play Games</h3>
+<p>If you are signed in to Google Play Games on your device, your save is backed up to your own Google account with the Play Games "Saved Games" feature (in a hidden app folder on Google Drive that you cannot see). The purpose is backup and continuing on another device with the same Google account. What is backed up: the whole save (including the character name), a save checksum, a revision number, a randomly generated install ID, the save time, combat level and gold amount.</p>
+<p>No account is created in the game. The game uses your Play Games player ID and player name only to match the save and show it to you; your e-mail address is not given to the game. This data is processed by Google as part of Play Games Services, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Saves are not kept on any server of ours and we cannot access them. If you do not sign in to Play Games, nothing is sent.</p>
+<p>The save stays in your Google account until you delete it; you can delete Mythweald's data in the Play Games settings. The local save on this device is not affected.</p>
+</section>
+
 <h3>Third-party components in the app</h3>
-<p>The app package includes Google Firebase libraries for an optional cloud backup that may be enabled in the future. In this version the game does not sign in to Firebase and does not read or write cloud saves.</p>
+<p>The app package includes Google Play services libraries for features that may be enabled later (Play Games cloud save and Google Play billing). Both are off in this version: the game does not sign in to Play Games, does not read or write cloud saves, and offers no purchases.</p>
 
 <h3>Android backup</h3>
 <p>If Google backup is on for your device, Android may copy app data, including your save, to your device backup in your Google account and restore it when you reinstall. This is done by Android and Google according to your device settings; we have no access to that data. You can turn it off in your device settings.</p>
